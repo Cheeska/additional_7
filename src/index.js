@@ -30,16 +30,18 @@ function containsInRow(row, number) {
     for (var i = 0; i < 9; i++) {
         if (matrix[row][i] == number) {
             return true;
-        } else return false;
+        } 
     }
+    return false;
 }
 
 function containsInCol(col, number) {
     for (var i = 0; i < 9; i++) {
         if (matrix[i][col] == number) {
             return true;
-        } else return false;
+        }
     }
+    return false;
 }
 
 function containsInBox(row, col, number) {
@@ -50,9 +52,10 @@ function containsInBox(row, col, number) {
         for (j = c; j < c + 3; j++) {
             if (matrix[i][j] == number) {
                 return true;
-            } else return false;
+            } 
         }
     }
+    return false;
 }
 
 function isAllowed(row, col, number) {
